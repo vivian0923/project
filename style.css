@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Antonio', sans-serif;
+    width: 100%; 
+    min-width:1200px;
+     margin:auto;
+}
+
+.main-header{
+    /* min-width:1200px;  */
+    min-width: 768px;
+    /* width:1200px; */
+    display: flex;
+    padding: 10px;
+    background-color: black;
+    
+}
+
+
+
+.header{
+    /* width:1200px; */
+    min-width: 768px;
+    /* width: 100%; */
+   
+    background-color: #D9D9D9;
+    font-size: 36px;
+    text-align: center;
+    line-height: 150px;
+    background-color: #F2B310;
+    /* margin-bottom: 30px; */
+}
+
+
+.logo img{
+    vertical-align: middle;
+}
+nav{
+    display: flex;
+    margin: auto;
+   
+}
+nav a{
+    line-height: 40px;
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 5px 20px;
+ 
+}
+
+
+
+
+.main-footer{
+    border: blue 2px solid;
+    min-width: 768px;
+    /* width:1200px; */
+    background-color: black;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.main-footer .logo{
+    border:2px red solid;
+    margin-top: 50px;
+}
+.main-footer .tel p{
+    margin-top: 60px;
+}
+
+
+.footer-icon{
+    border:white 2px solid;
+    position: relative;
+    /* display: flex; 設定後會變成3個icon和contact us同排*/
+}
+.footer-icon P{
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.footer-icon .icon{
+    padding:10px;
+    display: inline-block;
+    /* margin:0 20px; */
+    border: 2px yellow solid;
+    /* justify-content: center; */
+    
+}
+
+.main-footer,footer-icon p{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.main-footer-contact{
+   text-align: center;
+   margin: 10px 0px;
+
+   border:2px solid red;
+}
+
+.subscribe-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .subscribe-container input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    /* margin-right: 10px; */
+    width: 250px;
+  }
+  
+  .subscribe-container button {
+    padding: 10px 20px;
+    background-color: #F2B310;
+    color: black;
+    font-weight: 10000;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+  }
+
+#gotop{
+    /* width:30px;
+    height:60px; */
+    position: fixed;
+    bottom:20px;
+    right:50px;
+   
+}
+#gotop img{
+    width:40px;
+    height:50px;
+}
+
+h1,h2,h2{
+    color:#333;
+}
+
+/* p{
+    color:#666;
+} */
+
+/* 輪播圖 */
+.slider-container {
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    width: 300%;
+    animation: slide 10s infinite;
+  }
+  
+  .slider img {
+    width: 33.33%;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    /* 100% { transform: translateX(0); } */
+  }
+
+
+
+
+

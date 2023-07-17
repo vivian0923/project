@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+   
+  
+    
+    <title>首頁</title>
+    <style>
+       
+
+        .banner img{
+            width:1220px;
+            vertical-align: top;
+        }
+      
+        /*    關於我們 */
+        .index-aboutus{
+            background-color:white;
+            width: 1220px;
+            /* height: 420px; */
+            display: flex;
+            position: relative;
+            border: 2px orange solid;
+        }
+
+        .index-aboutus .pic img{
+            border: #1ff210 5px solid;
+            width: 100%;
+            
+            }
+
+        .index-aboutus .txt{
+            border: 2px blue solid;
+            background-color: #EEF1FD;
+            padding:30px 10px 10px 300px;
+            width:500px;
+            height: 300px;
+            margin-top: auto;
+            position: absolute;
+            bottom: 0;
+            left:400px;
+            opacity:0.5;
+            text-align: left;
+          }
+
+          
+
+        .index-aboutus .txt h2{
+            border: purple 1px solid;
+            font-size: 20px;
+          
+           
+        }
+
+        .index-aboutus .txt.p{
+            font-size: 16px;
+            /* align-content:flex-end; */
+            text-align: right;
+            position: absolute;
+            bottom: 0;
+
+        }
+
+        /* 課程特色 */
+        .index-course{
+            background-color:#F2B310;
+            width: 1220px;
+            /* height: 500px; */
+            text-align:center;
+            border: 5px solid red;
+            
+            
+            
+        }
+
+        .index-course h2{
+            border: 5px solid green;
+            margin:10px;
+        }
+        
+        .course{
+            border: 5px solid blue;
+            width: 100%;
+            display:flex; 
+           
+        }
+
+          .course .feature{
+            border: 5px solid blue;
+            margin:30px;
+        }
+
+        .course img{
+            border: 5px solid greenyellow;
+            width:50px;
+            /* flex:1; */
+            padding:100px;
+            justify-content: center;
+            
+        }
+      
+       
+
+
+        /* 心得分享 */
+        .idea{
+            width: 1220px;
+            text-align: center;
+            border: purple 5px solid;
+
+            
+         
+        }
+
+        .card {
+            border: 2px tomato solid;
+            /* display: flex;
+            flex-direction: row;
+            align-items: center;     圖文沒有置中 
+            width: 1300px; */
+            width:600px;
+	        margin: 30px auto ;
+	        display:flex;
+        	align-items:center;
+        
+        }
+       
+     
+        .card .pic img{
+            width: 50%;
+            vertical-align:middle;
+           }
+
+        .card .txt{
+            border: 2px red solid;
+            width: 50%;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin-left: 20px;
+            text-align: left;
+           }
+
+           /* 首頁場館環境 */
+        .venus{       
+            background-color: #F2B310;
+            width: 1220px;
+            text-align:center;
+            border: 5px solid red;
+           }
+
+        .venus h2{
+            border: 5px solid green;
+            margin:10px;
+            font-size: 36px;
+        }
+
+        .venus .card{
+            border: 5px solid blue;
+            width: 100%;
+            display:flex; 
+           
+        }
+
+        .venus .card img{
+            border: 5px solid greenyellow;
+            width:500px;
+            height: 300px;
+            /* flex:1; */
+            
+            justify-content: center;
+            
+        }
+
+        .venus .card .items{
+            border: 5px solid blue;
+            margin:30px;
+        }
+
+      
+
+        .venus .card .items h3{
+            border: 5px solid red;
+            font-size: 30px;
+        }
+
+
+        /* 立即體驗大圖 */
+        .bigpic{
+            width:1220px;
+            position: relative;
+            border:10px blue solid;
+        } 
+
+        .bigpic p{
+            font-size:36px;
+            position: absolute;
+            top:30px;
+            right:200px;
+            line-height:50px; 
+            
+        }
+
+
+        .bigpic a img{
+            
+            width:1220px;
+            height:400px;
+            vertical-align: top;
+            
+        }
+
+        .bigpic button{
+            padding:10px 80px;
+            background-color: #F4CD6A;
+            border: none;
+            position: absolute;
+            bottom: 180px;
+            right:300px;
+           
+
+        }
+   
+        /* 影片區 */
+        .video{
+            width:1220px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .video video{
+            margin-right:20px;
+        }
+
+       
+
+       
+    </style>
+</head>
+<body>
+    <div class="main-header">
+        <div class="logo">
+            <a href="#"><img src="imgs/logo.png" width=105 height=48></a>
+        </div>
+        <nav>
+            <a href="#">關於我們</a>
+            <a href="#">最新消息</a>
+            <a href="#">專業團隊</a>
+            <a href="#">服務項目</a>
+            <a href="#">場館介紹</a>
+            <a href="#">聯絡我們</a>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <img src="imgs/banner1.jpg " alt="首頁輪播圖" width=1300px height=500px>
+    </div>
+
+    <div class="index-aboutus">
+        <div class="pic">
+            <img src="imgs/關於我們(首頁).jpg" alt="首頁關於我們圖">
+        </div>
+        <div class="txt ">
+            <h2>關於我們</h2>
+            <p>除了提供專業的客製化一對一教學，
+                也提供上課的學員自主練習，
+                場館全面採用海外原裝進口的商用頂級有氧器材、重訓器材，
+                提供優質安全的訓練環境，帶給大家最好的運動體驗。
+                
+                健身教練團隊，
+                是以台灣各運動專項國家隊退役的選手及健美選手所組成，
+                透過專業系統化的教學培訓，在運動指導及健身知識上都能給予您最大的幫助！
+                
+                主打：沒有行銷的口水、只有服務的汗水，
+                我們是最「家」的健身工作室 ！</p>
+
+                <a href="#"><button type="button">
+                    了解更多
+                </button>
+            </a>
+        
+        </div>
+      
+
+    </div>
+
+     <div class="index-course">
+        <h2>課程特色</h2>
+        <div class="course">
+            <div class="feature">
+            <img src="imgs/heart-beat.png" alt="課程特色icon">
+            <p>會用視覺、聽覺與動能三種學習方式，並輔以正面回饋，讓你在課程中維持愉快的心情，達成最佳學習效能。</p></div>
+            <div class="feature">
+            <img src="imgs/2871284.png" alt="課程特色icon">
+            <p>研發的課程内容，以科學基礎為主、減少運動傷害風險為輔，實際協助你在運動過程中所面臨的各種狀況，有效達成目標。</p></div>
+            <div class="feature">
+            <img src="imgs/Frame 3.png" alt="課程特色icon">
+            <p>強調符合生物力學、變化性高的訓練內容，屏除單調制式的重複訓練，提高你身體強韌的功能性。</p></div>
+            
+        </div>
+    </div> 
+
+    <div class="idea">
+        <h2>學員心得分享</h2>
+        <div class="card">
+           
+            
+            <img src="imgs/left-arrow.png" alt="右箭頭" width="20px" >
+                    <img src="imgs/before.jpg" alt="學員before after"> 
+                
+
+                 <div class="txt">
+                    <h3>不喜歡運動的我 漸漸開始運動</h3>
+                    <p>我本身就是四隻細細瘦瘦的身材體重 48 公斤，以體脂肪 26~27 左右身材來說，覺得還蠻標準的，但肥肥鬆鬆的肚子有時後讓我很討厭，但也沒有什麼想要改變的動力，反正看起來瘦瘦的就好，突然有一天看到...</p>
+                </div>
+                <img src="imgs/right-arrow.png" alt="右箭頭" width="20px" >
+        </div>
+      
+        <img src="imgs/list.png" alt="輪播圖 3個點" width="30px" >
+
+    </div>
+
+    <div class="venus">
+        <h2>our store<br>
+            - 場館資訊 -
+        </h2>
+        <div class="card">
+            <div class="items">
+                <a href="#"><img src="imgs/環境1 index.jpg" alt="首頁環境圖"></a>
+                <h3>台北</h3>
+                <p>台北市信義區基隆路一段110號<br>
+                   電話 / 02-22135000<br>
+                時間 / 06:00-23:00</p>
+            </div>
+
+            <div class="items">
+                <a href="#"><img src="imgs/環境2 index.jpg" alt="首頁環境圖"></a>
+                <h3>桃園</h3>
+                <p>桃園市桃園區三民路三段120號<br>
+                    電話 /03-4258711<br>
+                 時間 / 06:00-23:00</p>
+                 </div>
+        </div>
+    </div> 
+
+    <div class="bigpic">
+        <a href="#"><img src="imgs/立即體驗.jpg" alt="立即體驗大圖"></a>
+        <p>追求理想最舒適的健身房<br>
+            可持續性的健身體驗</p>
+        <button type="button">立即體驗</button>
+    </div>
+
+    <div class="video">
+        <video controls 
+         disablePictureInPicture="true"
+         controlslist="nodownload nofullscreen noremoteplayback"></video>
+       
+        
+        <video width="300" height="300" controls></video>
+
+        <video width="300" height="300" controls></video>
+
+    </div>
+
+    <div class="main-footer">
+        <div class="logo">
+            <img src="imgs/logo.png" alt="logo圖" width=105 height=48>
+        </div>
+        <div class="tel">
+            <p>電話:03-4205643 <br>
+            時間/06:00-23:00 <br>
+            台北市信義區基隆路一段110號<br>
+            桃園市桃園區三民路三段120號
+            </p>
+        </div>
+         
+       
+
+        <div class="footer-icon">
+             <p>contact with us</p>
+
+             <div class="icon">
+                <img src="imgs/fb2.png" alt="fb" width=48 height=48>
+            </div>
+           
+            <div class="icon">
+                <img src="imgs/ig2.png" alt="ig" width=48 height=48>
+            </div>
+            <div class="icon">
+                <img src="imgs/line 2.png" alt="line" width=48 height=48>
+             </div>
+
+             <div class="main-footer-contact"> 
+                <h3>立即訂閱我們</h3>
+                 <div class="subscribe-container">
+                   <input type="email" id="emailInput" placeholder="輸入你的電子郵件地址">
+                   <button onclick="subscribe()">訂閱</button>
+                </div>
+        </div>
+
+        
+
+    </div>
+
+    <div id="gotop">
+        <img src="imgs/壺鈴.png" alt="壺鈴Top"  >
+    </div>
+    
+
+    
+
+    
+
+    
+
+
+
+
+ 
+       
+    
+</body>
+</html>
